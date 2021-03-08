@@ -7,12 +7,16 @@
     Get a daily inspirational quote when you open IntelliJ IDEA
     ]]></description>
 
+    <change-notes>Initial release of the plugin</change-notes>
+
+    <version>1.0.0</version>
+
     <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
          on how to target different products -->
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <!-- Add your extensions here -->
+        <postStartupActivity implementation="com.github.gedaliar.StartupActivity"/>
     </extensions>
 
     <actions>
