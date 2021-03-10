@@ -14,6 +14,7 @@ import java.net.HttpURLConnection;
 public class QuoteOfTheDayGetter {
 
     private static final Logger LOGGER = Logger.getInstance(QuoteOfTheDayGetter.class.getName());
+    public static final String API_BASE_URL = "http://quotes.rest/qod.json?category=";
 
     /**
      * Fetches Quote of the Day as JSOM from API and returns data as a String.
@@ -23,7 +24,7 @@ public class QuoteOfTheDayGetter {
      */
     public String getQuoteOfTheDayAsJSON(String category) throws IOException {
 
-        String urlString = "http://quotes.rest/qod.json?category=" + category;
+        String urlString = API_BASE_URL + category;
 
         URL url = new URL(urlString);
 
