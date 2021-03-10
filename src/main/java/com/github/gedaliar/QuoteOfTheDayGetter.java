@@ -18,13 +18,12 @@ public class QuoteOfTheDayGetter {
 
     /**
      * Fetches Quote of the Day as JSOM from API and returns data as a String.
-     * @param category category of quote as described by API todo: consider Inverting Dependency
      * @return String of returned JSON data
      * @throws IOException
      */
-    public String getQuoteOfTheDayAsJSON(String category) throws IOException {
+    public String getQuoteOfTheDayAsJSON() throws IOException {
 
-        String urlString = API_BASE_URL + category;
+        String urlString = API_BASE_URL;
 
         URL url = new URL(urlString);
 

@@ -2,7 +2,6 @@ package com.github.gedaliar;
 
 import org.junit.jupiter.api.Test;
 import java.io.IOException;
-import static org.junit.jupiter.api.Assertions.*;
 
 class QuoteOfTheDayJSONParserTest {
 
@@ -11,7 +10,7 @@ class QuoteOfTheDayJSONParserTest {
 
     @Test
     void BasicTest() throws IOException {
-        QuoteOfTheDayAPIResponse response = parser.parseJson(getter.getQuoteOfTheDayAsJSON("inspire"));
+        QuoteOfTheDayAPIResponse response = parser.parseJson(getter.getQuoteOfTheDayAsJSON());
         System.out.println(response);
     }
 
