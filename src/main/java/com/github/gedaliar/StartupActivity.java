@@ -9,6 +9,9 @@ public class StartupActivity implements com.intellij.openapi.startup.StartupActi
     @Override
     public void runActivity(@NotNull Project project) {
         Messages.showMessageDialog(project, "Hello World!", "Quote of the Day", Messages.getInformationIcon());
+
+
+
     }
 
 
